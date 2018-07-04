@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+@media only screen and (min-width: 600px) {
+    body {
+        font-family: 'Press Start 2P';
+        background-image: url("game.png");
+        background-color: #1D9CAE;
+        background-repeat: repeat no-repeat;
+        background-attachment: fixed;
+        background-position-y: 100%;
+    }
+
+    .title {
+        text-align:Center;
+        margin: 8px;
+        color: white;
+        width: 100%;
+        display: block;
+        overflow: auto;
+    }
+
+    .logInContainer {
+        position: absolute;
+        right: 20%;
+        left: 20%;
+        top: auto;
+        bottom: auto;
+        font-size: 1em;
+        padding: 8px 32px 0px 32px;
+        background-color: rgba(255, 255,255, .75)
+    }
+
+    .registerContainer {
+        position: absolute;
+        right: 20%;
+        left: 20%;
+        top: auto;
+        bottom: auto;
+        font-size: 1em;
+        padding: 8px 32px 0px 32px;
+        background-color: rgba(255, 255,255, .75)
+    }
+
+    .chapterContainer {
+        position: absolute;
+        right: 20%;
+        left: 20%;
+        top: auto;
+        bottom: auto;
+        font-size: 1em;
+        padding: 8px 32px 0px 32px;
+        background-color: rgba(255, 255,255, .75)
+    }
+
+    .resultsContainer {
+        position: absolute;
+        right: 20%;
+        left: 20%;
+        top: auto;
+        bottom: auto;
+        font-size: 1em;
+        padding: 8px 32px 0px 32px;
+        background-color: rgba(255, 255,255, .75);
+        height: 432px;
+    }
+/* 
+    #chartContainer {
+        width: auto;
+        height: auto;
+    } */
+
+    .logInForm {
+        height: 100%;
+    }
+
+    .register-btn {
+        width: 100%;
+    }
+
+    .buttons {
+        position: absolute;
+        bottom: 8px;
+        right: 20%;
+        left: 20%;
+    }
+
+    .inputLabel {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    body {
+        font-family: 'Press Start 2P';
+        background-image: url("game.png");
+        background-color: #1D9CAE;
+        background-repeat: repeat no-repeat;
+        background-attachment: fixed;
+        background-position-y: 100%;
+    }
+    .title {
+        text-align:Center;
+        margin: 8px;
+        color: white;
+        width: 100%;
+        display: block;
+        overflow: auto;
+    }
+    .logInContainer {
+        position: absolute;
+        right: 2%;
+        left: 2%;
+        top: auto;
+        bottom: auto;
+        font-size: 1em;
+        padding: 8px 32px 0px 32px;
+        background-color: rgba(255, 255,255, .75)
+    }
+    .registerContainer {
+        position: absolute;
+        right: 2%;
+        left: 2%;
+        top: auto;
+        bottom: auto;
+        font-size: 1em;
+        padding: 8px 32px 0px 32px;
+        background-color: rgba(255, 255,255, .75)
+    }
+    .chapterContainer {
+        position: absolute;
+        right: 2%;
+        left: 2%;
+        top: auto;
+        bottom: auto;
+        font-size: 1em;
+        padding: 8px 32px 0px 32px;
+        background-color: rgba(255, 255,255, .75)
+    }
+    .resultsContainer {
+        position: absolute;
+        right: 2%;
+        left: 2%;
+        top: auto;
+        bottom: auto;
+        font-size: 1em;
+        padding: 8px 32px 0px 32px;
+        background-color: rgba(255, 255,255, .75);
+        height: 432px;
+    }
+    #chartContainer {
+        width: auto;
+        height: auto;
+    }
+}

@@ -1,0 +1,15 @@
+<div class="card chapterContainer">
+    {{{text}}}
+    <hr />
+{{#each choice_array}}
+        <div class="card choice" data={{this.value}}>{{{this.name}}}</div>
+{{/each}}
+    <hr />
+</div>
+
+<span id="logout">
+    LOG OUT
+</span>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/assets/js/game.js"></script>

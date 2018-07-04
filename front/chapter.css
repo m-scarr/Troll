@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+@media only screen and (min-width: 600px) {
+    body {
+        font-family: 'Press Start 2P';
+        background-image: url("game.png");
+        background-color: #1D9CAE;
+        background-repeat: repeat no-repeat;
+        background-attachment: fixed;
+        background-position-y: 100%;
+    }
+
+    .title {
+        text-align:Center;
+        margin: 8px;
+        color: white;
+        width: 100%;
+        display: block;
+        overflow: auto;
+    }
+
+    .chapterContainer {
+        position: absolute;
+        right: 20%;
+        left: 20%;
+        top: auto;
+        bottom: 30%;
+        font-size: 1em;
+        padding: 8px 32px 0px 32px;
+        background-color: rgba(255, 255,255, .75);
+    }
+    
+
+    .choicesContainer {
+        position: absolute;
+        right: 20%;
+        left: 20%;
+        top: 75%;
+        bottom: 3%;
+        font-size: 2vh;
+        padding: 8px 32px 0px 32px;
+        background-color: rgba(255, 255,255, .75);
+        overflow-y: scroll;
+    }
+
+    .logInForm {
+        height: 100%;
+    }
+
+    .register-btn {
+        width: 100%;
+    }
+
+    .buttons {
+        position: absolute;
+        bottom: 8px;
+        right: 20%;
+        left: 20%;
+    }
+
+    .inputLabel {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 600x) {
+    body {
+        font-family: 'Press Start 2P';
+        background-image: url("game.png");
+        background-color: #1D9CAE;
+        background-repeat: repeat no-repeat;
+        background-attachment: fixed;
+        background-position-y: 100%;
+    }
+    .title {
+        text-align:Center;
+        margin: 8px;
+        color: white;
+        width: 100%;
+        display: block;
+        overflow: auto;
+    }
+
+    
+    .chapterContainer {
+        position: absolute;
+        right: 2%;
+        left: 2%;
+        top: 5%;
+        font-size: 1em;
+        padding: 8px 32px 0px 32px;
+        background-color: rgba(255, 255,255, .75);
+        overflow-y: scroll;
+    }
+    .choicesContainer {
+        position: absolute;
+        right: 2%;
+        left: 2%;
+        top: 67%;
+        bottom: 8px;
+        background-color: rgba(255, 255,255, .75);
+        overflow-y: scroll;
+    }
+    .choice {
+        margin: 4px;
+        text-align: center;
+        height:25%;
+    }
+}
