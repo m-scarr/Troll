@@ -8,6 +8,13 @@ var config    = require(path.join(__dirname, '..', 'config', 'config.json'))[env
 var sequelize = new Sequelize(config.database, config.username, config.password, config);
 var db        = {};
 
+sequelize.query("CREATE DATABASE IF NOT EXISTS `trollstoll`;").then((err,res) => {
+  if (err) {
+    console.log(err)
+  } else {
+  console.log(res)
+  }
+})
 
 fs
   .readdirSync(__dirname)
