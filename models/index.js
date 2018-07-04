@@ -8,7 +8,7 @@ var config    = require(path.join(__dirname, '..', 'config', 'config.json'))[env
 var sequelize = new Sequelize(config.database, config.username, config.password, config);
 var db        = {};
 
-sequelize.query("CREATE DATABASE IF NOT EXISTS `trollstoll`;").then((err,res) => {
+sequelize.query("CREATE DATABASE IF NOT EXISTS `TrollsToll`;").then((err,res) => {
   if (err) {
     console.log(err)
   } else {
