@@ -7,6 +7,8 @@ var PORT = process.env.PORT || 3000;
 
 var app = express();
 
+var test = 0
+
 //include the models
 var db = require("./models");
 
