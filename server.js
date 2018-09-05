@@ -16,6 +16,8 @@ var options = { //this will go in the .env
   database: process.env.DB_DATABASE//,
 };
 
+
+
 var sessionStore = new MySQLStore(options);
 
 var test = 0
