@@ -2,10 +2,21 @@ var express = require("express");
 var bodyParser = require("body-parser");
 var passport = require("passport")
 const session = require('express-session')
+const MySQLStore = require('express-mysql-session')(session);
 var flash = require('express-flash');
 var PORT = process.env.PORT || 3000;
 
 var app = express();
+
+var options = { //this will go in the .env
+  host: process.env.DB_HOST,
+  port: 3306,
+  user: process.env.DB_USER,
+  password: process.env.DB_PASS,
+  database: process.env.DB_DATABASE//,
+};
+
+var sessionStore = new MySQLStore(options);
 
 var test = 0
 
@@ -29,7 +40,7 @@ app.set("view engine", "handlebars");
 app.use(flash());
 
 
-app.use(session({ secret: 'keyboard cat', resave: true, saveUninitialized: true })); // session secret
+app.use(session({ secret: 'keyboard cat', store: sessionStore, resave: true, saveUninitialized: true })); // session secret
 app.use(passport.initialize());
 app.use(passport.session());
 
